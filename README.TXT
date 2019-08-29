@@ -19,3 +19,10 @@ USER INSTRUCTIONS:Abstraction lets you concentrate on the important issues about
 discarding the details.
 
 Modularization: Organize de problem on smalller parts
+
+The student information system is primarily about students, so as your first task 
+you will abstract that real-world concept into its object-oriented 
+representation. A candidate class might be Student. Student objects should 
+contain basic information about a student such as name, identification number, and grades. 
+You will concentrate on an even smaller concern first: 
+Create a unique student object that stores the name of the student.
