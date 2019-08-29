@@ -44,11 +44,9 @@ public class StudentTest
     public void testCreate()
     {
         Student student1 = new Student("Jane Doe");
-        String studentName = student1.getName();
-        assertEquals("Jane Doe",studentName);
+        assertEquals("Jane Doe",student1.getName());
         
         Student student2 = new Student("Joe Black");
-        studentName = student2.getName();
-        assertEquals("Joe Black", studentName);
+        assertEquals("Joe Black", student2.getName());
     }
 }
