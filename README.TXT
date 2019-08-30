@@ -26,3 +26,20 @@ representation. A candidate class might be Student. Student objects should
 contain basic information about a student such as name, identification number, and grades. 
 You will concentrate on an even smaller concern first: 
 Create a unique student object that stores the name of the student.
+
+Schools have courses, such as Math 101 and Engl 200, that are taught every 
+semester. Basic course information, such as the department, the number, 
+the number of credits, and the description of the course, generally remains
+the same from semester to semester.
+
+You will define a CourseSession class that captures both the basic course 
+information and the enrollment in the session. As long as you only need to 
+work with the CourseSession objects for a single semester, 
+no two CourseSessions should need to refer to the same course. Once two CourseSession 
+objects must exist for the same course, having the basic course information 
+stored in both CourseSession objects is redundant. For now, multiple sessions 
+is not a consideration; later you will clean up 
+the design to support multiple sessions for a single course.
+
+
+
