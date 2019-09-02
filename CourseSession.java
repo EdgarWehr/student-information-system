@@ -1,16 +1,19 @@
+import java.util.ArrayList;
+
+
 public class CourseSession
 {
     private String department;
     private String number;
     private int numberStudents;
-    private Student[] allStudents;
+    private ArrayList<Student> allStudents;
     
     public CourseSession(String department, String number)
     {
         this.department = department;
         this.number = number;
         this.numberStudents = 0;
-        this.allStudents = new Student[20];
+        this.allStudents = new ArrayList<Student>();
     }
     
     public String getDepartment()
@@ -28,14 +31,14 @@ public class CourseSession
         return numberStudents;
     }
     
-    public void enroll(Student studentN)
+    public void enroll(Student student)
     {
-        allStudents[numberStudents] = studentN;
+        allStudents.add(student);
         numberStudents += 1;
     }
     
     public Student getStudent(int p)
     {
-        return allStudents[p];
+        return allStudents.get(p);
     }
 }

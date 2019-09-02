@@ -67,4 +67,15 @@ public class CourseSessionTest
         assertEquals(student1, session1.getStudent(0));
         assertEquals(student2, session1.getStudent(1));
     }
+    /*
+    @Test
+    public void unenrollStudent()
+    {
+        CourseSession session1 = new CourseSession("ENGL","101");
+        
+        Student student1 = new Student("Jack Ford");
+        session1.enroll( student1 );
+        session.unenroll( student1 );
+        assertEquals(null, session1.getStudent("Jack Ford"));
+    }*/
 }
