@@ -41,4 +41,23 @@ public class CourseSession
     {
         return allStudents.get(p);
     }
+    
+    public Student getStudent(String a)
+    {
+        for(int i = 0; i < numberStudents; i++)
+        {
+            Student student = allStudents.get(i);
+            if(student.getName() == a)
+            {
+                return student;
+            }
+        }
+        return null;
+    }
+    
+    public void unenroll(Student student)
+    {
+        allStudents.remove( student );
+        numberStudents--;
+    }
 }
