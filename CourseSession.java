@@ -34,8 +34,8 @@ public class CourseSession
         numberStudents += 1;
     }
     
-    public Student[] getAllStudents()
+    public Student getStudent(int p)
     {
-        return allStudents;
+        return allStudents[p];
     }
 }

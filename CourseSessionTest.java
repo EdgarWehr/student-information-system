@@ -64,7 +64,7 @@ public class CourseSessionTest
         session1.enroll( student2 );
         assertEquals(2, session1.getNumberOfStudents());
         
-        assertEquals(student1, session1.getAllStudents()[0]);
-        assertEquals(student2, session1.getAllStudents()[1]);
+        assertEquals(student1, session1.getStudent(0));
+        assertEquals(student2, session1.getStudent(1));
     }
 }
